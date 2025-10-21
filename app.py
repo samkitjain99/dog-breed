@@ -1,4 +1,5 @@
 import streamlit as st
+import tensorflow
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
@@ -29,3 +30,4 @@ if uploaded_file is not None:
 
 
     st.success(f"Prediction: **{predicted_class}** 🐾")
+
